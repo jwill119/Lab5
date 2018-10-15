@@ -19,7 +19,7 @@ private:
   long x;
      //  The current random integer.
 
-  void error( char* message );
+  void error( char message );
      //  Prints message to cout and aborts.
 
   void next( );

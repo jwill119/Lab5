@@ -28,7 +28,7 @@ const long r = 13971;
 
 
 void
-RanGen::error( char* message ) {
+RanGen::error(char message ) {
   cout << message << endl;
   abort();
   }
@@ -48,7 +48,8 @@ RanGen::next( ) {
 
 RanGen::RanGen( long seed ) {
     if( (seed<=0) || (seed>=m) )
-      error( "Generator seed out of range." );
+        error('b');
+      //  error("Generator seed out of range.");
     x = seed;
     }
 
